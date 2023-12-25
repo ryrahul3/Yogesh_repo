@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---------css link------->
+    <link rel="stylesheet" href="style.css">
+    
+    <!--------js link------>
+    <script src="login.js"></script>
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="#">
+            
+               <div class="details personal">
+                  <span class="title">Personal Details</span>
+                  <div class="fields">
+                  <div class="input-fields">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your name" id="name" required>
+                  </div>
+                  <div class="input-fields">
+                    <label>Date of Birth</label>
+                    <input type="date" placeholder="Enter birth date" id="dob" required>
+                  </div>
+                  <div class="input-fields">
+                    <label>Email</label>
+                    <input type="text" placeholder="Enter your email" id="mail" required>
+                  </div>
+                  </div>
+               </div>
+               <button class="submitbtn" type="submit" onclick="save()">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
