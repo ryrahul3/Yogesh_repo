@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Employee Record</title>
+    <script>
+         async function callAPi(){
+         let result = await fetch('https://dummy.restapiexample.com/api/v1/employee/1');
+         result = await result.text();
+         console.log(result);
+         document.getElementById("div").innerHTML =result
+         
+        }
+        callAPi()
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">Single employee Record</h1>
+    <div class="container" id="div">
+     
+    </div>
+</body>
+</html>

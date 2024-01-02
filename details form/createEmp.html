@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create a employee</title>
+    <script>
+        const data ={"name":"test","salary":"123","age":"23"};
+        fetch('https://dummy.restapiexample.com/api/v1/create', {
+            method : "POST", 
+            body : JSON.stringify(data),
+            headers : {
+                "Content-type" :"application/json"
+            }
+        }).then(res => res.json()).then(data => console.log(data));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
