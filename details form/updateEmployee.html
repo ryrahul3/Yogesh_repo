@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update an employee</title>
+    <script>
+        const putData =	{"name":"test","salary":"123","age":"23"};
+        fetch('https://dummy.restapiexample.com/public/api/v1/update/21', {
+            method : "PUT", 
+            body : JSON.stringify(putData),
+            headers : {"Content-type" : "application/json"
+        }
+        }).then(res => res.json()).then(data =>{
+            console.log(data)
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
